@@ -2,14 +2,6 @@ var request = require('supertest');
 const app = require('../index.js').app;
 
 
-beforeAll(function() {
-  if (server) {
-    server.close()
-  } else {
-
-  }
-});
-
 describe('loading express', function () {
   var server;
   beforeEach(function () {
