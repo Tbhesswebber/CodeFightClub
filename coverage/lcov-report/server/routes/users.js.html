@@ -20,9 +20,9 @@
     </h1>
     <div class='clearfix'>
       <div class='fl pad1y space-right2'>
-        <span class="strong">26% </span>
+        <span class="strong">28.26% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>13/50</span>
+        <span class='fraction'>13/46</span>
       </div>
       <div class='fl pad1y space-right2'>
         <span class="strong">0% </span>
@@ -32,12 +32,12 @@
       <div class='fl pad1y space-right2'>
         <span class="strong">0% </span>
         <span class="quiet">Functions</span>
-        <span class='fraction'>0/12</span>
+        <span class='fraction'>0/11</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">26% </span>
+        <span class="strong">28.26% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>13/50</span>
+        <span class='fraction'>13/46</span>
       </div>
     </div>
     <p class="quiet">
@@ -144,13 +144,7 @@
 <a name='L96'></a><a href='#L96'>96</a>
 <a name='L97'></a><a href='#L97'>97</a>
 <a name='L98'></a><a href='#L98'>98</a>
-<a name='L99'></a><a href='#L99'>99</a>
-<a name='L100'></a><a href='#L100'>100</a>
-<a name='L101'></a><a href='#L101'>101</a>
-<a name='L102'></a><a href='#L102'>102</a>
-<a name='L103'></a><a href='#L103'>103</a>
-<a name='L104'></a><a href='#L104'>104</a>
-<a name='L105'></a><a href='#L105'>105</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<a name='L99'></a><a href='#L99'>99</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
@@ -159,19 +153,20 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -182,8 +177,6 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -198,9 +191,6 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -244,8 +234,6 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -263,21 +251,22 @@ var LocalStrategy = require('passport-local').Strategy;
 &nbsp;
 // SIGNUP
 router.get('/signup', <span class="fstat-no" title="function not covered" >fu</span>nction(req, res) {
-<span class="cstat-no" title="statement not covered" >  res.render('signup');</span>
+  //Render sign-in page?
 });
 &nbsp;
 // LOGIN
 router.get('/login', <span class="fstat-no" title="function not covered" >fu</span>nction(req, res) {
-<span class="cstat-no" title="statement not covered" >  res.render('login');</span>
+  // render login page?
 });
 &nbsp;
 // SIGNUP USER
 router.post('/signup', <span class="fstat-no" title="function not covered" >fu</span>nction(req, res) {
-  var name = <span class="cstat-no" title="statement not covered" >req.body.name;</span>
+  var username = <span class="cstat-no" title="statement not covered" >req.body.username;</span>
   var email = <span class="cstat-no" title="statement not covered" >req.body.email;</span>
   var password = <span class="cstat-no" title="statement not covered" >req.body.password;</span>
+&nbsp;
   // VALIDATION
-<span class="cstat-no" title="statement not covered" >  req.checkBody('name', 'Name is required').notEmpty();</span>
+<span class="cstat-no" title="statement not covered" >  req.checkBody('username', 'Username is required').notEmpty();</span>
 <span class="cstat-no" title="statement not covered" >  req.checkBody('email', 'Email is required').notEmpty();</span>
 <span class="cstat-no" title="statement not covered" >  req.checkBody('email', 'Email is not valid').isEmail();</span>
 <span class="cstat-no" title="statement not covered" >  req.checkBody('password', 'Password is required').notEmpty();</span>
@@ -285,12 +274,10 @@ router.post('/signup', <span class="fstat-no" title="function not covered" >fu</
   var errors = <span class="cstat-no" title="statement not covered" >req.validationErrors();</span>
 &nbsp;
 <span class="cstat-no" title="statement not covered" >  if (errors) {</span>
-<span class="cstat-no" title="statement not covered" >    res.render('/signup', {</span>
-      errors: errors
-    });
+<span class="cstat-no" title="statement not covered" >    console.log(errors);</span>
   } else {
     var newUser = <span class="cstat-no" title="statement not covered" >new User({</span>
-      name: name,
+      username: username,
       email: email,
       password: password
     });
@@ -303,10 +290,7 @@ router.post('/signup', <span class="fstat-no" title="function not covered" >fu</
 <span class="cstat-no" title="statement not covered" >      console.log(user);</span>
     });
 &nbsp;
-    //only way to show this is to check for 'success_msg' in the view
-<span class="cstat-no" title="statement not covered" >    req.flash('success_msg', 'You are registered and can now login');</span>
-&nbsp;
-<span class="cstat-no" title="statement not covered" >    res.redirect('/users/login');</span>
+<span class="cstat-no" title="statement not covered" >    res.redirect('/login');</span>
 &nbsp;
   }
 });
@@ -347,9 +331,7 @@ passport.deserializeUser(<span class="fstat-no" title="function not covered" >fu
   });
 });
 &nbsp;
-router.post('/login', passport.authenticate('local', {successRedirect:'/', failureRedirect:'/users/login', failureFlash: true}), <span class="fstat-no" title="function not covered" >fu</span>nction(req, res) {
-<span class="cstat-no" title="statement not covered" >  res.redirect('/');</span>
-});
+router.post('/login', passport.authenticate('local', {successRedirect:'/', failureRedirect:'/login', session: true}));
 &nbsp;
 router.get('/logout', <span class="fstat-no" title="function not covered" >fu</span>nction(req, res) {
 <span class="cstat-no" title="statement not covered" >  req.logout();</span>
@@ -364,7 +346,7 @@ module.exports = router;
 </div><!-- /wrapper -->
 <div class='footer quiet pad2 space-top1 center small'>
   Code coverage
-  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Thu Apr 12 2018 07:46:43 GMT-0700 (PDT)
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Thu Apr 12 2018 15:42:29 GMT-0700 (PDT)
 </div>
 </div>
 <script src="../../prettify.js"></script>

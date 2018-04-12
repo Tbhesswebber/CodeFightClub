@@ -1,23 +1,16 @@
-var request = require('supertest');
-const app = require('../index.js').app;
+const request = require('supertest');
+const app = require('../app.js');
 
+beforeAll(() => {
+  let server = app.listen(3000, () => console.log(`listening to port 3000`))
+});
 
-describe('loading express', function () {
-  var server;
-  beforeEach(function () {
-    server = require('../index.js').server;
-  });
-  afterEach(function () {
-    server.close();
-  });
-  it('responds to /', function testSlash(done) {
-  request(server)
-    .get('/')
-    .expect(200, done);
-  });
-  it('404 everything else', function testPath(done) {
-    request(server)
-      .get('/foo/bar')
-      .expect(404, done);
+afterAll(() => {
+  server.close();
+});
+
+describe('Test the root directory', () => {
+  test('should response to the GET method', () => {
+      return request(app).get('/').expect(200);
   });
 });

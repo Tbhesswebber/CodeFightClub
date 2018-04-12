@@ -38,12 +38,10 @@ app.use(passport.session());
 app.use('/', routes);
 app.use('/users', users);
 
-app.set('port', (process.env.PORT || 3000));
+if (!module.parent) {
+  app.set('port', (process.env.PORT || 3000));
+  
+  app.listen(PORT, () => console.log(`listening to port ${PORT}`));
+}
 
-const server = app.listen(app.get('port'), function() {
-  console.log('Server started on port:' + app.get('port'));
-});
-
-
-module.exports.app = app;
-module.exports.server = server;
+module.exports = app;
