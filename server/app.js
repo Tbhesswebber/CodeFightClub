@@ -12,11 +12,8 @@ var LocalStrategy = require('passport-local').Strategy;
 var flash = require('connect-flash');
 var http = require('http');
 //var socketIO = require('socket.io');
-//var db = require('../database/index.js')
-//var Users = require('../database/index.js').Users;
-
-var routes = require('./routes/index');
-var users = require('./routes/users')
+var db = require('../database/index.js');
+var User = require('../database/index.js').User;
 
 var app = express();
 
@@ -41,7 +38,12 @@ app.use('/users', users);
 if (!module.parent) {
   app.set('port', (process.env.PORT || 3000));
   
-  app.listen(PORT, () => console.log(`listening to port ${PORT}`));
+  app.listen(app.get('port'), function() {
+    console.log('Server started on port:' + app.get('port'));
+  });
 }
+
+
+require('./routes.js').passportRoutes(app, passport);
 
 module.exports = app;
